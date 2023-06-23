@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+</head>
+<style type="text/css">
+    div{
+        width: 200px;
+        height: 200px;
+        position: relative;
+        background-color: blue;
+        animation-name: harsh;
+        animation-iteration-count: infinite;
+        animation-duration: 15s;
+    }
+    @keyframes harsh{
+        0%{
+            background-color: blueviolet;
+            top: 0;
+            left: 0;
+        }
+        25%{
+            background-color: rgb(13, 72, 41);
+            left: 400px;
+            top: 0;
+            rotate: 90deg;
+        }
+        50%{
+            background-color: rgb(24, 113, 113);
+            top: 400px;
+            left: 400px;
+            rotate: 180deg;
+        }
+        75%{
+            background-color: rgb(97, 40, 65);
+            left: 0;
+            top: 400px;
+            rotate: 270deg;
+        }
+        100%{
+            background-color: cadetblue;
+            top: 0;
+            left: 0;
+            rotate: 360deg;
+        }
+    }
+</style>
+<body>
+    <div></div>
+</body>
+</html>

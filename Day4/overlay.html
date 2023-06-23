@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style type="text/css">
+        
+        .img {
+            position: relative;
+            transition: 1s;
+            height: 500px;
+            width: 500px;
+        }
+        .img img{
+            position: relative;
+            transition: 1s;
+            height: 500px;
+            width: 500px;
+        }
+        .overlay{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            opacity: 0;
+            height: 100%;
+            transition: 1s;
+            background-color: rgba(0, 0, 0, 0.7);
+            height: 500px;
+            width: 500px;
+        }
+        .img:hover .overlay{
+            opacity: 1;
+        }
+        .img:hover img{
+            transform: rotate(360deg);
+            opacity: 0;
+        }
+        .text{
+            color: white;
+            font-size: 50px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="img">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhG_cZjxXIlwfsjseD7-LMSMzWI7txguoSLjCbwM85&s"
+            alt="" />
+            <div class="overlay">
+                <div class="text">Hello!</div>
+            </div>
+    </div>
+</body>
+
+</html>
